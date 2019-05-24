@@ -17,4 +17,11 @@ describe('Calculator', () => {
             expect(result).to.equal(1)
         })
     })
+    describe('Multiply', () => {
+        it('should return the multiply result of two numbers', () => {
+            const calc = new Calculator()
+            const result = calc.calculate(OperationType.MULTIPLY, 1, 2)
+            expect(result).to.equal(2)
+        })
+    })
 })

@@ -7,6 +7,8 @@ export default class Calculator {
                 return this._plus(a, b)
             case OperationType.MINUS:
                 return this._minus(a, b)
+            case OperationType.MULTIPLY:
+                return this._multiply(a, b)
         }
     }
     private _plus(a: number, b: number): number {
@@ -14,5 +16,8 @@ export default class Calculator {
     }
     private _minus(a: number, b: number): number {
         return a - b
+    }
+    private _multiply(a: number, b: number): number {
+        return a * b
     }
 }
